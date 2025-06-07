@@ -3,12 +3,16 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Meow+Script&display=swap');
+
+
 :root {
     --primary-color: #41210A;
     --secondary-color: #613915;
     --tertiary-color: #A77D53;
     
     --accent-color: #D8C7AB;
+    --background: #383231;
 
     --primary-text-color: #333333;
     --secondary-text-color: #ffffff;
@@ -24,7 +28,8 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: var(--accent-color);
+    /* background-color: var(--primary-color); */
+    background-image: linear-gradient(to top left, var(--primary-color), var(--secondary-color), var(--tertiary-color)) ;
     color: #333;
     width: 100dvw;
 }
@@ -40,6 +45,12 @@ header{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
     color: var(--primary-color);
     height: 60dvh;
+}
+
+h1{
+    font-family: "Meow Script", cursive;
+    font-size: 2.5rem;
+    color: var(--primary-color);
 }
 
 header>h1, header>nav{
@@ -78,28 +89,26 @@ a:hover{
 
 section{
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     height: 70dvh;
     width: 100dvw;
-    background: var(--secondary-color);
     color: var(--secondary-text-color);
     border: 1px solid var(--primary-color);
 }
 
 #produtos{
-    background-image: url('../img/img3.jpeg');
+    /* background-image: url('../img/img3.jpeg'); */
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-end;
 }
 
 #produtos>h1, #produtos>p{
-
     background-color: var(--primary-color);
     color: var(--secondary-text-color);
     padding: 10px;
@@ -109,8 +118,16 @@ section{
 
 }
 
+#depoimentos>p{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 40px;
+    border-radius: 10px;
+}
+
 h2{
-    margin: 20px 0;
+    align-self: center;
+    margin: 20px;
     color: var(--secondary-text-color);
 }
 
@@ -118,6 +135,7 @@ p{
     margin: 10px 20px;
     line-height: 1.5;
     color: var(--secondary-text-color);
+    text-align: center;
 }
 
 footer{
