@@ -31,7 +31,6 @@ body{
     /* background-color: var(--primary-color); */
     background-image: linear-gradient(to top left, var(--primary-color), var(--secondary-color), var(--tertiary-color)) ;
     color: #333;
-    width: 100dvw;
 }
 
 header{
@@ -44,7 +43,7 @@ header{
     background-size: cover;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.384);
     color: var(--primary-color);
-    height: 60dvh;
+    height: 80dvh;
 }
 
 h1{
@@ -92,20 +91,52 @@ section{
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    height: 70dvh;
-    width: 100dvw;
     color: var(--secondary-text-color);
     border: 1px solid var(--primary-color);
 }
 
+#inicio{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .8) 20%, var(--primary-color)80%);
+    color: var(--secondary-text-color);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    min-height: 60dvh;
+}
+
+.inicio-img{
+    width: 35%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    display: block;
+}
+
+.inicio-texto{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: -20px 1px 40px rgba(0, 0, 0, 1);
+}
+
+.inicio-texto p{
+    width: 60%;
+    color: var(--secondary-text-color);
+}
+
 #produtos{
-    /* background-image: url('../img/img3.jpeg'); */
-    background-position: center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
+    background-position: center;
+    background-size: cover;
 }
 
 #produtos>h1, #produtos>p{
@@ -118,6 +149,22 @@ section{
 
 }
 
+#produtos>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
+}
+
+#produtos>div img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 #depoimentos>p{
     background-color: var(--accent-color);
     color: var(--primary-color);
@@ -125,23 +172,42 @@ section{
     border-radius: 10px;
 }
 
+#compromisso{
+    background-image: url('../img/img3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+}
+
+#compromisso>h2, #compromisso>p{
+    text-align: center;
+    font-family: "Capriola", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
 h2{
     align-self: center;
-    margin: 20px;
+    font-family: "Meow Script", cursive;
     color: var(--secondary-text-color);
+    margin: 20px;
 }
 
 p{
+    text-align: center;
+    color: var(--secondary-text-color);
     margin: 10px 20px;
     line-height: 1.5;
-    color: var(--secondary-text-color);
-    text-align: center;
 }
 
 footer{
+    text-align: center;
     background: var(--primary-color);
     color: var(--secondary-text-color);
-    text-align: center;
     padding: 10px 0;
 }
 
