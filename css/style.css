@@ -119,13 +119,13 @@ section{
     width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
     box-shadow: -20px 1px 40px rgba(0, 0, 0, 1);
 }
 
-.inicio-texto p{
+.inicio-paragrafo{
     width: 60%;
     color: var(--secondary-text-color);
 }
